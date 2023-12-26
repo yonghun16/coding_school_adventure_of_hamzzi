@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>송코치의 햄스터 코딩</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="./favicon.png" rel="icon" />
+
+    <!-- 구글 아이콘 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- JS 라이브러리-->
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- gsap-scrollTo -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+      integrity="sha512-v/m68W+vaGN/6igoyFpd4GlQzu0jx9/n5gr2PKq5vif+RObyGKHse384YHrOULaxZ810XhlHUrmB3U8UnPB19Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- 라이트박스 겔러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js"></script>
+    <!-- common.js & main.js -->
+    <script defer src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <header></header>
+
+    <!-- 메인 화면 -->
+    <section class="main">
+      <div class="inner">
+        <div class="headerBar">송코치의 햄스터 로봇 코딩</div>
+        <div class="mainImage">햄찌의 모험 - 메인 이미지</div>
+        <div class="back2"></div>
+        <div class="fade-in">
+          <img src="img/main/mama.png" alt="햄찌엄마" class="mama" />
+        </div>
+        <div class="fade-in">
+          <img src="img/main/hamzzi.png" alt="햄찌" class="hamzzi" />
+        </div>
+        <div class="fade-in title">
+          <img src="img/main/main_title.png" alt="타이틀" class="mainTitle" />
+        </div>
+        <div class="fade-in title">
+          <img
+            src="img/main/sub_title.png"
+            alt="서브 타이틀"
+            class="subTitle"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- 스테이지 목차 -->
+    <section class="index">
+      <div class="inner">
+        <div class="stageIndex">
+          <div class="headerBar">스테이지 목록</div>
+        </div>
+        <div class="stage1">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage1/maze.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">첫 번째 스테이지</div>
+                <div class="stageMainTitle">미로 던전 통과하기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContents"></div>
+        </div>
+
+        <div class="stage2">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage2/code.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">두 번째 스테이지</div>
+                <div class="stageMainTitle">암호 던전 통과하기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContents"></div>
+        </div>
+
+        <div class="stage3">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage3/river.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">세 번째 스테이지</div>
+                <div class="stageMainTitle">안전하게 강 건너기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContents"></div>
+        </div>
+
+        <div class="stage4">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage4/trash.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">네 번째 스테이지</div>
+                <div class="stageMainTitle">청소하며 길 건너기</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContents"></div>
+        </div>
+
+        <div class="stage5">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage5/sing.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">다섯 번째 스테이지</div>
+                <div class="stageMainTitle">
+                  노래로 몹 재우기&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContents"></div>
+        </div>
+
+        <div class="stage6">
+          <div class="titleBox">
+            <div class="titleBox__inner">
+              <div class="stageImg">
+                <img src="img/stage6/mob.png" alt="" class="stageImg" />
+              </div>
+              <div class="stageTitle">
+                <div class="stageSubTitle">여섯 번째 스테이지</div>
+                <div class="stageMainTitle">몹 피하며 던전 탈출</div>
+              </div>
+              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+                arrow_drop_down_circle
+              </div>
+            </div>
+          </div>
+          <div class="stageContents"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 수료증 -->
+    <section class="certificate">
+      <div class="inner">
+        <div class="headerBar">수료증</div>
+        <img src="img/common/certificate.png" alt="" />
+      </div>
+    </section>
+
+    <!-- 갤러리 -->
+    <section class="gallery">
+      <div class="inner">
+        <div class="headerBar">사진첩</div>
+        <div class="gallery__contents">
+          <img
+            src="img/gallery/pic1.jpg"
+            alt="Image"
+            class="pic"
+          />
+          <img
+            src="img/gallery/pic2.jpg"
+            alt="swamp"
+            class="pic"
+          />
+          <img
+            src="img/gallery/pic3.jpg"
+            alt="swamp"
+            class="pic"
+          />
+          <img
+            src="img/gallery/pic4.jpg"
+            alt="swamp"
+            class="pic"
+          />
+          <img
+            src="img/gallery/pic5.jpg"
+            alt="swamp"
+            class="pic"
+          />
+          <img
+            src="img/gallery/pic6.jpg"
+            alt="swamp"
+            class="pic"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>Copyright © 2023 송코치 All Rights Reserved.</div>
+      <div class="school">송코치의 코딩스쿨</div>
+    </footer>
+  </body>
+</html>

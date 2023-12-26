@@ -1,0 +1,233 @@
+/* import css */
+@import "reset.css";
+
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+/* common */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  background-image: url("../img/common/back.png");
+}
+
+.inner {
+  width: 100%;
+  margin: 0 auto; /* 가운데 정렬 */
+  min-width: 350px;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.headerBar {
+  width: 100%;
+  height: 60px;
+  font-size: 2.5em;
+  font-family: 'Dongle', 'Roboto', sans-serif;
+  color: white;
+  background-color: #4b8f25;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+/* main section */
+.main {
+  margin-bottom: 40px;
+}
+.main .mainImage {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/main/main_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+.main .back2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.main .mama,
+.main .hamzzi {
+  min-width: 100px;
+  width: 30%;
+  position: absolute;
+}
+
+.main .mama {
+  bottom: 55%;
+  left: 10px;
+}
+
+.main .hamzzi {
+  top: 53%;
+  right: -2px;
+}
+
+.main .title {
+  display: flex;
+  justify-content: center;
+}
+
+.main .mainTitle,
+.main .subTitle {
+  width: 100%;
+  position: absolute;
+}
+
+.main .mainTitle {
+  display: block;
+  bottom: 25%;
+  max-width: 500px;
+}
+
+.main .subTitle {
+  top: 75%;
+  max-width: 500px;
+}
+.main .fade-in {
+  opacity: 0;
+}
+
+/* index section */
+
+.index {
+  margin-bottom: 40px;
+}
+
+.index .titleBox {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+  background-image:  url("../img/common/stabe_bar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.index .titleBox:last-child {
+  border-bottom: none;
+}
+
+.index .titleBox__inner {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-right: 70px;
+}
+
+.index .titleBox__inner:hover {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.index .stageImg {
+  width: 70px;
+  height: 50px;
+  position:absolute;
+  top: 2px;
+  left: 100px;
+}
+
+.index .stageTitle {
+  position:absolute;
+  left: 35px;
+  top: 9px;
+}
+
+.index .stageSubTitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+}
+
+.index .stageMainTitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: white;
+  font-size: 1.4rem;
+}
+
+.index .btnDrop {
+  position: absolute;
+  color: white;
+  top: 13px;
+  right: 20px;
+  font-size: 36px;
+}
+
+/* 수료증 section */
+.certificate {
+  margin-bottom: 30px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+
+/* 갤러리 section */
+.gallery {
+  margin-bottom: 30px;
+}
+
+.gallery .gallery__contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.gallery .gallery__contents img {
+  display: block;
+  margin: 1vw;
+  width: 10vw;
+  min-width: 100px;
+  height: 10vw;
+  min-height: 100px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Footer */
+footer {
+  width: 100%;
+  min-width: 350px;
+  font-size: 15px;
+  margin-top: 40px;
+  color: #fff;
+  background-color: #4b8f25;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer .school {
+  margin-top: 10px;
+  font-size: 12px;
+}
