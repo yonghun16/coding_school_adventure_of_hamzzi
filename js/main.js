@@ -10,7 +10,6 @@ fadeEls.forEach(function (fadeEl, index) {
 
 
 /* 라이트 박스 갤러리 */
-
 function wrap(el) {
   const wrappingElement = document.createElement("a");
   wrappingElement.href = el.src;
@@ -24,3 +23,22 @@ document.querySelectorAll(".pic").forEach((el) => {
 });
 
 refreshFsLightbox();
+
+
+/* 배경 음악 */
+const btnPlay = document.querySelector(".main .btnPlay");
+const btnPause = document.querySelector(".main .btnPause");
+const bgm = new Audio();
+
+bgm.src = "../sound/rmw0027.mp3";
+// bgm.autoplay = true;
+bgm.loop = true;
+// 재생 버튼
+btnPlay.onclick = function () {
+  bgm.play();
+}
+
+// 일시정지 버튼
+btnPause.onclick = function () {
+  bgm.pause();
+}

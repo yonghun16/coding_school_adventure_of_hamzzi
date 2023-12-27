@@ -24,15 +24,16 @@ body {
 .headerBar {
   width: 100%;
   height: 60px;
-  font-size: 2.5em;
+  font-size: 2.3em;
   font-family: 'Dongle', 'Roboto', sans-serif;
   color: white;
   background-color: #6ab04c;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: sticky;
   top: 0;
+  padding-left: 35px;
+  box-sizing: border-box;
   z-index: 2;
 }
 
@@ -49,6 +50,13 @@ body {
 .main {
   margin-bottom: 40px;
 }
+
+
+.main .main__headerBar {
+  padding-left: 0;
+  justify-content: center;
+}
+
 .main .mainImage {
   width: 100%;
   height: 80vw;
@@ -71,6 +79,9 @@ body {
   height: 100%;
   background-color: white;
   opacity: 0.1;
+}
+.main .audioBtn {
+  position: absolute;
 }
 
 .main .mama,
@@ -121,6 +132,10 @@ body {
   margin-bottom: 40px;
 }
 
+.index .stage {
+  border-bottom: 1px black solid;
+}
+
 .index .titleBox {
   height: 60px;
   position: sticky;
@@ -155,7 +170,7 @@ body {
 
 .index .stageTitle {
   position:absolute;
-  left: 35px;
+  left: 30px;
   top: 9px;
 }
 
@@ -176,6 +191,13 @@ body {
   top: 13px;
   right: 20px;
   font-size: 36px;
+}
+
+.index .stage__contentsBox {
+  width: 100%;
+  background-image: url("../img/common/back2.png");
+  background-repeat: repeat;
+
 }
 
 /* 수료증 section */
