@@ -95,8 +95,6 @@ body {
   font-size: 70px;
 }
 
-
-
 .main .mama,
 .main .hamzzi {
   min-width: 100px;
@@ -146,10 +144,15 @@ body {
 }
 
 .index .stage {
-  border-bottom: 1px black solid;
+  border-bottom: 1px #1e1104 solid;
 }
 
-.index .titleBox {
+.index .titleBox1,
+.index .titleBox2,
+.index .titleBox3,
+.index .titleBox4,
+.index .titleBox5,
+.index .titleBox6 {
   height: 60px;
   position: sticky;
   top: 0;
@@ -158,19 +161,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.index .titleBox:last-child {
-  border-bottom: none;
-}
-
 .index .titleBox__inner {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   padding-right: 70px;
-}
-
-.index .titleBox__inner:hover {
-  border: 2px solid rgba(255, 255, 255, 1);
 }
 
 .index .stageImg {
@@ -204,6 +199,11 @@ body {
   top: 13px;
   right: 20px;
   font-size: 36px;
+  opacity: 0.4;
+}
+.index .btnDrop--hover {
+  opacity: 1;
+  transition: opacity 0.2s;
 }
 
 .index .stage__contentsBox {
