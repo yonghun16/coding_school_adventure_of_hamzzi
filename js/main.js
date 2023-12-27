@@ -29,10 +29,10 @@ refreshFsLightbox();
 const btnAudio = document.querySelector(".main .audioBtn")
 const btnPlay = document.querySelector(".main .audioBtnPlay");
 const btnPause = document.querySelector(".main .audioBtnPause");
-const bgm = document.querySelector(".bgm");
+const bgm = new Audio();
+bgm.src= "./sound/rmw0027.mp3";
 let isHideAudioBtn = false;
 
-bgm.src = "../sound/rmw0027.mp3";
 // bgm.autoplay = true;
 bgm.loop = true;
 
