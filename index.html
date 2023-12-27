@@ -35,7 +35,9 @@
   </head>
 
   <body>
-    <audio src="sound/rmw0027.mp3" class="bgm">오디오 지원되지 않는 브라우저</audio>
+    <audio src="sound/rmw0027.mp3" class="bgm">
+      오디오 지원되지 않는 브라우저
+    </audio>
 
     <header></header>
 
@@ -46,9 +48,17 @@
         <div class="mainImage">햄찌의 모험 - 메인 이미지</div>
         <div class="back2"></div>
         <div class="audioBtn">
-          <button class="btnPlay">재생 버튼</button>
-          <button class="btnPause">일시정지 버튼</button>
+          <div class="audioBtnPlay">
+            <div class="material-symbols-outlined"> play_circle </div>
+          </div>
+          <div class="audioBtnPause hidden">
+            <div class="material-symbols-outlined"> pause_circle </div>
+          </div>
         </div>
+
+        <!-- <button class="btnPlay">재생 버튼</button> -->
+        <!-- <button class="btnPause">일시정지 버튼</button> -->
+
         <div class="fade-in">
           <img src="img/main/mama.png" alt="햄찌엄마" class="mama" />
         </div>
@@ -201,36 +211,12 @@
       <div class="inner">
         <div class="headerBar">사진첩</div>
         <div class="gallery__contents">
-          <img
-            src="img/gallery/pic1.jpg"
-            alt="Image"
-            class="pic"
-          />
-          <img
-            src="img/gallery/pic2.jpg"
-            alt="swamp"
-            class="pic"
-          />
-          <img
-            src="img/gallery/pic3.jpg"
-            alt="swamp"
-            class="pic"
-          />
-          <img
-            src="img/gallery/pic4.jpg"
-            alt="swamp"
-            class="pic"
-          />
-          <img
-            src="img/gallery/pic5.jpg"
-            alt="swamp"
-            class="pic"
-          />
-          <img
-            src="img/gallery/pic6.jpg"
-            alt="swamp"
-            class="pic"
-          />
+          <img src="img/gallery/pic1.jpg" alt="Image" class="pic" />
+          <img src="img/gallery/pic2.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic3.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic4.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic5.jpg" alt="swamp" class="pic" />
+          <img src="img/gallery/pic6.jpg" alt="swamp" class="pic" />
         </div>
       </div>
     </section>

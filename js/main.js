@@ -26,13 +26,16 @@ refreshFsLightbox();
 
 
 /* 배경 음악 */
-const btnPlay = document.querySelector(".main .btnPlay");
-const btnPause = document.querySelector(".main .btnPause");
+const btnAudio = document.querySelector(".main .audioBtn")
+const btnPlay = document.querySelector(".main .audioBtnPlay");
+const btnPause = document.querySelector(".main .audioBtnPause");
 const bgm = document.querySelector(".bgm");
+let isHideAudioBtn = false;
 
 bgm.src = "../sound/rmw0027.mp3";
 // bgm.autoplay = true;
 bgm.loop = true;
+
 // 재생 버튼
 btnPlay.onclick = function () {
   bgm.play();
@@ -42,3 +45,15 @@ btnPlay.onclick = function () {
 btnPause.onclick = function () {
   bgm.pause();
 }
+
+btnAudio.addEventListener("click", function (){
+  isHideAudioBtn = !isHideAudioBtn;
+  if(isHideAudioBtn) {
+    btnPlay.classList.add('hidden');
+    btnPause.classList.remove('hidden');
+  }
+  else {
+    btnPlay.classList.remove('hidden');
+    btnPause.classList.add('hidden');
+  }
+})
