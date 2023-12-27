@@ -13,24 +13,23 @@ const btnAudio = document.querySelector(".main .audioBtn");
 const btnPlay = document.querySelector(".main .audioBtnPlay");
 const btnPause = document.querySelector(".main .audioBtnPause");
 const bgm = new Audio();
-let isHideAudioBtn = false;
 bgm.src = "./sound/rmw0027.mp3";
 bgm.loop = true;
-bgm.autoplay = true;
 
-let promise = bgm.play();
-
-if (promise !== undefined) {
-  promise
-    .then((_) => {
-    isHideAudioBtn = !isHideAudioBtn;
-      btnPlay.classList.add("hidden");
-      btnPause.classList.remove("hidden");
-    })
-    .catch((error) => {
-      bgm.autoplay = false;
-    });
-}
+// 자동 재생 감지
+// bgm.autoplay = true;
+// let promise = bgm.play();
+// if (promise !== undefined) {
+//   promise
+//     .then((_) => {
+//       isHideAudioBtn = !isHideAudioBtn;
+//       btnPlay.classList.add("hidden");
+//       btnPause.classList.remove("hidden");
+//     })
+//     .catch((error) => {
+//       bgm.autoplay = false;
+//     });
+// }
 
 btnPlay.onclick = function () {
   bgm.play();
@@ -40,6 +39,7 @@ btnPause.onclick = function () {
   bgm.pause();
 };
 
+let isHideAudioBtn = false;
 btnAudio.addEventListener("click", function () {
   isHideAudioBtn = !isHideAudioBtn;
   if (isHideAudioBtn) {
