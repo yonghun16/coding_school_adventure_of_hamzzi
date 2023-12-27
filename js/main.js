@@ -28,7 +28,7 @@ refreshFsLightbox();
 /* 배경 음악 */
 const btnPlay = document.querySelector(".main .btnPlay");
 const btnPause = document.querySelector(".main .btnPause");
-const bgm = new Audio();
+const bgm = document.querySelector(".bgm");
 
 bgm.src = "../sound/rmw0027.mp3";
 // bgm.autoplay = true;
