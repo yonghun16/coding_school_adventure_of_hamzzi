@@ -266,8 +266,8 @@ body img {
 .index .stageCodeblock,
 .index .stageSourceImg {
   width: 91%;
-  max-width: 370px;
-  min-width: 240px;
+  max-width: 360px;
+  min-width: 250px;
 }
 
 .index .stage__solution,
@@ -309,13 +309,14 @@ body img {
   position: absolute;
   top: 10px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .45);
   color: white;
   font-size: 1.1rem;
   line-height: 1.5;
   text-shadow: 1px 1px 1px black;
   width: 100%;
   margin-top: 70px;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 
@@ -359,8 +360,8 @@ body img {
 
 /* stage 2 */
 .stage2 .question2 {
-  height: calc(370px + 11vw);
-  max-height: 480px;
+  height: calc(380px + 15vw);
+  max-height: 450px;
 }
 
 .stage2 .solution2 {
@@ -372,13 +373,23 @@ body img {
   height: calc(600px + 45vw);
   max-height: 900px;
 }
-.stage2 .source2 .stageSource2Img {
-  width: 90%;
-  max-width: 370px;
-  min-width: 250px;
+
+
+/* stage 3 */
+.stage3 .question3 {
+  height: calc(440px + 15vw);
+  max-height: 470px;
 }
 
+.stage3 .solution3 {
+  height: calc(540px + 25vw);
+  max-height: 580px;
+}
 
+.stage3 .source3 {
+  height: calc(320px + 40vw);
+  max-height: 540px;
+}
 
 
 
