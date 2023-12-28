@@ -17,6 +17,7 @@ function onYouTubePlayerAPIReady() {
     events: {
       // 영상이 준비되었을 때,
       onReady: function (event) {
+        event.target.mute() // 음소거!
       }
     }
   })

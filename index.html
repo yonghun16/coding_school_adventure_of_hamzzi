@@ -47,10 +47,10 @@
         <div class="back2"></div>
         <div class="audioBtn">
           <div class="audioBtnPlay">
-            <div class="material-symbols-outlined"> play_circle </div>
+            <div class="material-symbols-outlined">play_circle</div>
           </div>
           <div class="audioBtnPause hidden">
-            <div class="material-symbols-outlined"> pause_circle </div>
+            <div class="material-symbols-outlined">pause_circle</div>
           </div>
         </div>
 
@@ -79,7 +79,8 @@
         <div class="stageIndex">
           <div class="headerBar">스테이지 목록</div>
         </div>
-        <div class="stage stage1">
+
+        <div class="stage1">
           <div class="titleBox1">
             <div class="titleBox__inner">
               <div class="stageImg">
@@ -89,66 +90,76 @@
                 <div class="stageSubTitle">첫 번째 스테이지</div>
                 <div class="stageMainTitle">미로 던전 통과하기</div>
               </div>
-              <div class="material-symbols-outlined btnDrop btnDrop--inactive">
+              <div class="material-symbols-outlined btnDrop">
                 arrow_drop_down_circle
               </div>
             </div>
           </div>
-          <div class="stageContents">
-            <div class="stage__contentsBox contentsBox1">
-              <div class="stage__question question1">
-                <div class="stage__hamzzi">
-                  <img src="img/common/hamzzi.png" alt="햄찌">
-                </div>
-                <div class="stage__question__textBox">
-                  <p>< 햄찌 ></p>
-                  <p>학생아 엄마를 찾아야 되는데 미로가 있어,
-                  내가 잔디블록으로만 갈 수 있도록 도와줘 ㅠ.ㅠ
-                  </p>
-                  <div class="minimap">
-                    <img src="img/stage1/stage1_map.png" alt="미니맵">
-                  </div>
+          <div class="stageContents stageContents1 hidden">
+            <div class="stage__question question1">
+              <div class="stage__hamzzi">
+                <img src="img/common/hamzzi.png" alt="햄찌" />
+              </div>
+              <div class="stage__question__textBox">
+                <p>< 햄찌 ></p>
+                <p>
+                  학생아 엄마를 찾아야 되는데 미로가 있어, 내가 잔디블록으로만
+                  갈 수 있도록 도와줘 ㅠ.ㅠ
+                </p>
+                <div class="minimap">
+                  <img src="img/stage1/stage1_map.png" alt="미니맵" />
                 </div>
               </div>
-              <div class="stage__solution solution1">
-                <div class="stage__student">
-                  <img src="img/common/boy.png" alt="학생">
-                </div>
-                <div class="stage__solution__textBox">
-                  <p>< 학생 ></p>
-                  <p>걱정마! 햄찌야!</p>
-                  <p>이동블록을 사용하면 널 쉽게 움직일 수 있을거야!</p>
-                  <img src="img/stage1/stage1_codeblock.png" alt="" class="stage1Codeblock" />
-                  <p>앞으로 가게한 뒤, 왼쪽 또는 오른쪽으로 돌게하고 다시 앞으로 움직여보자!</p>
-                </div>
+            </div>
+            <div class="stage__solution solution1">
+              <div class="stage__student">
+                <img src="img/common/boy.png" alt="학생" />
               </div>
-              <div class="stage__source source1">
-                <div class="stage__student">
-                  <img src="img/common/boy.png" alt="학생">
-                </div>
-                <div class="stage__source__textBox">
-                  <p>< 학생 ></p>
-                  <p>이게 완성된 소스야!!</p>
-                  <img src="img/stage1/stage1_source.png" alt="" class="stage1Source">
-                </div>
+              <div class="stage__solution__textBox">
+                <p>< 학생 ></p>
+                <p>걱정마! 햄찌야!</p>
+                <p>이동블록을 사용하면 널 쉽게 움직일 수 있을거야!</p>
+                <img
+                  src="img/stage1/stage1_codeblock.png"
+                  alt=""
+                  class="stage1Codeblock"
+                />
+                <p>
+                  앞으로 가게한 뒤, 왼쪽 또는 오른쪽으로 돌게하고 다시 앞으로
+                  움직여보자!
+                </p>
               </div>
-              <div class="stage__video video1">
-                <div class="stage__hamzzi">
-                  <img src="img/common/hamzzi.png" alt="햄찌">
-                </div>
-                <div class="stage__video__textBox">
-                  <p>< 햄찌 ></p>
-                  <p> 얏호! 고마워 학생아~ 이제 여길 통과 할 수 있어 </p>
-                  <div class="video__area">
-                    <div id="player1"></div>
-                  </div>
+            </div>
+            <div class="stage__source source1">
+              <div class="stage__student">
+                <img src="img/common/boy.png" alt="학생" />
+              </div>
+              <div class="stage__source__textBox">
+                <p>< 학생 ></p>
+                <p>이게 완성된 소스야!!</p>
+                <img
+                  src="img/stage1/stage1_source.png"
+                  alt=""
+                  class="stage1Source"
+                />
+              </div>
+            </div>
+            <div class="stage__video video1">
+              <div class="stage__hamzzi">
+                <img src="img/common/hamzzi.png" alt="햄찌" />
+              </div>
+              <div class="stage__video__textBox">
+                <p>< 햄찌 ></p>
+                <p>얏호! 고마워 학생아~ 이제 여길 통과 할 수 있어</p>
+                <div class="video__area">
+                  <div id="player1"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="stage">
+        <div class="stage2">
           <div class="titleBox2">
             <div class="titleBox__inner">
               <div class="stageImg">
@@ -163,10 +174,10 @@
               </div>
             </div>
           </div>
-          <div class="stageContents"></div>
+          <div class="stageContents stageContents2 hidden"></div>
         </div>
 
-        <div class="stage">
+        <div class="stage3">
           <div class="titleBox3">
             <div class="titleBox__inner">
               <div class="stageImg">
@@ -181,10 +192,10 @@
               </div>
             </div>
           </div>
-          <div class="stageContents"></div>
+          <div class="stageContents stageContents3 hidden"></div>
         </div>
 
-        <div class="stage">
+        <div class="stage4">
           <div class="titleBox4">
             <div class="titleBox__inner">
               <div class="stageImg">
@@ -199,10 +210,10 @@
               </div>
             </div>
           </div>
-          <div class="stageContents"></div>
+          <div class="stageContents stageContents4 hidden"></div>
         </div>
 
-        <div class="stage">
+        <div class="stage5">
           <div class="titleBox5">
             <div class="titleBox__inner">
               <div class="stageImg">
@@ -211,7 +222,7 @@
               <div class="stageTitle">
                 <div class="stageSubTitle">다섯 번째 스테이지</div>
                 <div class="stageMainTitle">
-                  노래로 몹 재우기&nbsp;&nbsp;&nbsp;&nbsp;
+                  노래로 몹 재우기
                 </div>
               </div>
               <div class="material-symbols-outlined btnDrop btnDrop--inactive">
@@ -219,10 +230,10 @@
               </div>
             </div>
           </div>
-          <div class="stageContents"></div>
+          <div class="stageContents stageContents5 hidden"></div>
         </div>
 
-        <div class="stage">
+        <div class="stage6">
           <div class="titleBox6">
             <div class="titleBox__inner">
               <div class="stageImg">
@@ -237,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div class="stageContents"></div>
+          <div class="stageContents stageContents6 hidden"></div>
         </div>
       </div>
     </section>
