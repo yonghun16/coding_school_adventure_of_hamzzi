@@ -229,7 +229,12 @@ body img {
   transition: 0.2s;
 }
 
-.index .stageContents {
+.index .stageContents1,
+.index .stageContents2,
+.index .stageContents3,
+.index .stageContents4,
+.index .stageContents5,
+.index .stageContents6 {
   width: 100%;
   background-image: url("../img/common/back2.png");
   background-repeat: repeat;
@@ -256,6 +261,13 @@ body img {
 .index .stage__video
 {
   position: relative;
+}
+
+.index .stageCodeblock,
+.index .stageSourceImg {
+  width: 91%;
+  max-width: 370px;
+  min-width: 240px;
 }
 
 .index .stage__solution,
@@ -307,6 +319,25 @@ body img {
   box-sizing: border-box;
 }
 
+.index .video {
+  height: calc(280px + 27vw);
+  max-height: 500px;
+}
+
+.index .video__area {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.index .video__area .player {
+  width: 70vw;
+  height: calc(70vw * 9 / 16);
+  min-width: 200px;
+  min-height: calc(200px * 9 / 16);
+  max-width: 500px;
+  max-height: calc(500px * 9 / 16);
+}
 
 
 /* stage 1 */
@@ -324,35 +355,28 @@ body img {
   height: calc(330px + 31vw);
   max-height: 540px;
 }
-.stage1 .video1 {
-  height: calc(280px + 27vw);
-  max-height: 500px;
+
+
+/* stage 2 */
+.stage2 .question2 {
+  height: calc(370px + 11vw);
+  max-height: 480px;
 }
 
-.stage1 .stage1Codeblock,
-.stage1 .stage1Source {
-  width: 91%;
+.stage2 .solution2 {
+  height: calc(450px + 2vw);
+  max-height: 460px;
+}
+
+.stage2 .source2 {
+  height: calc(600px + 45vw);
+  max-height: 900px;
+}
+.stage2 .source2 .stageSource2Img {
+  width: 90%;
   max-width: 370px;
-  min-width: 230px;
+  min-width: 250px;
 }
-
-.stage1 .video__area {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-}
-
-.stage1 .video__area #player1 {
-  width: 70vw;
-  height: calc(70vw * 9 / 16);
-  min-width: 200px;
-  min-height: calc(200px * 9 / 16);
-  max-width: 500px;
-  max-height: calc(500px * 9 / 16);
-}
-
-
-
 
 
 
