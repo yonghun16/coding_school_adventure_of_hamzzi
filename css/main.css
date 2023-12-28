@@ -45,7 +45,15 @@ body img {
   display: none;
 }
 
-
+.button {
+  width: 100%;
+  padding: 0;
+  border: 0px;
+  text-align: left;
+  display: block;
+  line-height: 1;
+  font-size: 16px;
+}
 
 /* main section */
 .main {
@@ -300,15 +308,6 @@ body img {
 }
 
 
-.test {
-  width: 100%;
-  padding: 0;
-  border: 0px;
-  text-align: left;
-  display: block;
-  line-height: 1;
-  font-size: 16px;
-}
 
 /* stage 1 */
 .stage1 .question1 {
