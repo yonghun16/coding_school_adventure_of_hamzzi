@@ -12,6 +12,10 @@ body {
   background-image: url("../img/common/back.png");
 }
 
+body img {
+  -webkit-user-drag: none;
+}
+
 .inner {
   width: 100%;
   margin: 0 auto; /* 가운데 정렬 */
@@ -42,10 +46,12 @@ body {
 }
 
 
+
 /* main section */
 .main {
   margin-bottom: 40px;
 }
+
 
 
 .main .main__headerBar {
@@ -216,13 +222,13 @@ body {
   box-sizing: border-box;
 }
 
-.stage1 .minimap {
+.index .minimap {
   display: flex;
   justify-content: center;
   padding: 10px;
 }
 
-.stage1 .minimap img {
+.index .minimap img {
   min-width: 200px;
   width: 60vw;
   max-width: 300px;
@@ -302,8 +308,8 @@ body {
   max-height: 540px;
 }
 .stage1 .video1 {
-  height: calc(350px + 15vw);
-  max-height: 440px;
+  height: calc(280px + 27vw);
+  max-height: 500px;
 }
 
 .stage1 .stage1Codeblock,
@@ -313,8 +319,20 @@ body {
   min-width: 225px;
 }
 
+.stage1 .video__area {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
 
-
+.stage1 .video__area #player1 {
+  width: 70vw;
+  height: calc(70vw * 9 / 16);
+  min-width: 200px;
+  min-height: calc(200px * 9 / 16);
+  max-width: 500px;
+  max-height: calc(500px * 9 / 16);
+}
 
 
 
