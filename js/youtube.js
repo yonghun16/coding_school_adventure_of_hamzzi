@@ -20,5 +20,16 @@ function onYouTubePlayerAPIReady() {
         event.target.mute() // 음소거!
       }
     }
+  }),
+  new YT.Player('player2', {
+    videoId: 'QU_8wyvy9xk',
+    playerVars: {
+      playlist: 'QU_8wyvy9xk'
+    },
+    events: {
+      onReady: function (event) {
+        event.target.mute() // 음소거!
+      }
+    }
   })
 }
