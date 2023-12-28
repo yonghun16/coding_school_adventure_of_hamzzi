@@ -263,7 +263,7 @@ body {
   padding: 20px;
   background-color: rgba(0, 0, 0, .4);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   text-shadow: 1px 1px 1px black;
   width: 100%;
@@ -279,11 +279,11 @@ body {
 }
 
 .stage1 .question1 {
-  height: 240px;
+  height: 200px;
 }
 
 .stage1 .solution1 {
-  height: 350px;
+  height: 320px;
 }
 
 .stage1 .stage1Codeblock,
