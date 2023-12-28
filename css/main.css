@@ -67,7 +67,7 @@ body img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/main/main_bg.png");
+  background-image: url("../img/main/main_bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -149,10 +149,6 @@ body img {
   margin-bottom: 40px;
 }
 
-.index .stage {
-  border-bottom: 1px #1e1104 solid;
-}
-
 .index .titleBox1,
 .index .titleBox2,
 .index .titleBox3,
@@ -173,6 +169,7 @@ body img {
   height: 100%;
   box-sizing: border-box;
   padding-right: 70px;
+  border-bottom: 1px #1e1104 solid;
 }
 
 .index .stageImg {
@@ -207,19 +204,30 @@ body img {
   right: 20px;
   font-size: 36px;
   opacity: 0.4;
+  transition: opacity 0.2s;
 }
 .index .btnDrop--hover {
-  opacity: 1;
+  opacity: 0.8;
   transition: opacity 0.2s;
 }
 
-.index .stage__contentsBox {
+.index .btnDrop--upArrow {
+  transform: rotate(-180deg);
+  transition: 0.2s;
+}
+
+.index .btnDrop--downArrow {
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+
+.index .stageContents {
   width: 100%;
   background-image: url("../img/common/back2.png");
   background-repeat: repeat;
-  padding: 20px;
   position: relative;
   box-sizing: border-box;
+  padding: 20px;
 }
 
 .index .minimap {
@@ -314,9 +322,9 @@ body img {
 
 .stage1 .stage1Codeblock,
 .stage1 .stage1Source {
-  width: 90%;
+  width: 91%;
   max-width: 370px;
-  min-width: 225px;
+  min-width: 230px;
 }
 
 .stage1 .video__area {
