@@ -340,7 +340,6 @@ body img {
   max-height: calc(500px * 9 / 16);
 }
 
-
 /* stage 1 */
 .stage1 .question1 {
   height: calc(370px + 11vw);
@@ -356,7 +355,6 @@ body img {
   height: calc(330px + 31vw);
   max-height: 540px;
 }
-
 
 /* stage 2 */
 .stage2 .question2 {
@@ -374,7 +372,6 @@ body img {
   max-height: 900px;
 }
 
-
 /* stage 3 */
 .stage3 .question3 {
   height: calc(440px + 15vw);
@@ -382,14 +379,31 @@ body img {
 }
 
 .stage3 .solution3 {
-  height: calc(540px + 25vw);
-  max-height: 580px;
+  height: calc(550px + 25vw);
+  max-height: 620px;
 }
 
 .stage3 .source3 {
   height: calc(320px + 40vw);
   max-height: 540px;
 }
+
+/* stage 4 */
+.stage4 .question4 {
+  height: calc(380px + 15vw);
+  max-height: 450px;
+}
+
+.stage4 .solution4 {
+  height: calc(950px + 25vw);
+  max-height: 1050px;
+}
+
+.stage4 .source4 {
+  height: calc(630px + 125vw);
+  max-height: 1260px;
+}
+
 
 
 

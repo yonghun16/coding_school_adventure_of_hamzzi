@@ -10,9 +10,9 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 // 그리고 함수는 전역(Global) 등록해야 합니다!
 function onYouTubePlayerAPIReady() {
   new YT.Player('player1', {
-    videoId: 'NTtDAX7yk40', // 최초 재생할 유튜브 영상 ID
+    videoId: 'q1sclWdh69M', // 최초 재생할 유튜브 영상 ID
     playerVars: {
-      playlist: 'NTtDAX7yk40' // 반복 재생할 유튜브 영상 ID 목록
+      playlist: 'q1sclWdh69M' // 반복 재생할 유튜브 영상 ID 목록
     },
     events: {
       // 영상이 준비되었을 때,
@@ -22,9 +22,53 @@ function onYouTubePlayerAPIReady() {
     }
   }),
   new YT.Player('player2', {
-    videoId: 'QU_8wyvy9xk',
+    videoId: 'n-UOIM04ezo',
     playerVars: {
-      playlist: 'QU_8wyvy9xk'
+      playlist: 'n-UOIM04ezo'
+    },
+    events: {
+      onReady: function (event) {
+        event.target.mute() // 음소거!
+      }
+    }
+  }),
+  new YT.Player('player3', {
+    videoId: '84MaT383gCc',
+    playerVars: {
+      playlist: '84MaT383gCc'
+    },
+    events: {
+      onReady: function (event) {
+        event.target.mute() // 음소거!
+      }
+    }
+  }),
+  new YT.Player('player4', {
+    videoId: 'Sv8TfvxCdvY',
+    playerVars: {
+      playlist: 'Sv8TfvxCdvY'
+    },
+    events: {
+      onReady: function (event) {
+        event.target.mute() // 음소거!
+      }
+    }
+  }),
+  new YT.Player('player5', {
+    videoId: 'U0YJwSa2WVc',
+    playerVars: {
+      playlist: 'U0YJwSa2WVc'
+    },
+    events: {
+      onReady: function (event) {
+        event.target.mute() // 음소거!
+      }
+    }
+  }),
+  new YT.Player('player6', {
+    videoId: 'LYRzv4QbwFQ',
+    playerVars: {
+      playlist: 'LYRzv4QbwFQ'
     },
     events: {
       onReady: function (event) {
