@@ -395,12 +395,12 @@ body img {
 }
 
 .stage4 .solution4 {
-  height: calc(950px + 25vw);
+  height: calc(900px + 25vw);
   max-height: 1050px;
 }
 
 .stage4 .source4 {
-  height: calc(630px + 125vw);
+  height: calc(590px + 125vw);
   max-height: 1260px;
 }
 
