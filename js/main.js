@@ -129,8 +129,80 @@ stage3Btn.addEventListener("click", function() {
   }
 })
 
+// 스테이지4
+const stage4Btn = document.querySelector(".index .titleBox4");
+const stage4BtnDrop = document.querySelector(".index .stage4 .btnDrop");
+const stage4ContentsBox = document.querySelector(".index .stageContents4");
+let isClickedStage4Btn = false
 
+stage4Btn.addEventListener("mouseover", function() {
+  stage4BtnDrop.classList.add("btnDrop--hover");
+})
+stage4Btn.addEventListener("mouseout", function() {
+  stage4BtnDrop.classList.remove("btnDrop--hover");
+})
+stage4Btn.addEventListener("click", function() {
+  isClickedStage4Btn = !isClickedStage4Btn;
+  if(isClickedStage4Btn) {
+    stage4BtnDrop.classList.add("btnDrop--upArrow");
+    stage4BtnDrop.classList.remove("btnDrop--downArrow");
+    stage4ContentsBox.classList.remove("hidden");
+  } else {
+    stage4BtnDrop.classList.remove("btnDrop--upArrow");
+    stage4BtnDrop.classList.add("btnDrop--downArrow");
+    stage4ContentsBox.classList.add("hidden");
+  }
+})
 
+// 스테이지5
+const stage5Btn = document.querySelector(".index .titleBox5");
+const stage5BtnDrop = document.querySelector(".index .stage5 .btnDrop");
+const stage5ContentsBox = document.querySelector(".index .stageContents5");
+let isClickedStage5Btn = false
+
+stage5Btn.addEventListener("mouseover", function() {
+  stage5BtnDrop.classList.add("btnDrop--hover");
+})
+stage5Btn.addEventListener("mouseout", function() {
+  stage5BtnDrop.classList.remove("btnDrop--hover");
+})
+stage5Btn.addEventListener("click", function() {
+  isClickedStage5Btn = !isClickedStage5Btn;
+  if(isClickedStage5Btn) {
+    stage5BtnDrop.classList.add("btnDrop--upArrow");
+    stage5BtnDrop.classList.remove("btnDrop--downArrow");
+    stage5ContentsBox.classList.remove("hidden");
+  } else {
+    stage5BtnDrop.classList.remove("btnDrop--upArrow");
+    stage5BtnDrop.classList.add("btnDrop--downArrow");
+    stage5ContentsBox.classList.add("hidden");
+  }
+})
+
+// 스테이지6
+const stage6Btn = document.querySelector(".index .titleBox6");
+const stage6BtnDrop = document.querySelector(".index .stage6 .btnDrop");
+const stage6ContentsBox = document.querySelector(".index .stageContents6");
+let isClickedStage6Btn = false
+
+stage6Btn.addEventListener("mouseover", function() {
+  stage6BtnDrop.classList.add("btnDrop--hover");
+})
+stage6Btn.addEventListener("mouseout", function() {
+  stage6BtnDrop.classList.remove("btnDrop--hover");
+})
+stage6Btn.addEventListener("click", function() {
+  isClickedStage6Btn = !isClickedStage6Btn;
+  if(isClickedStage6Btn) {
+    stage6BtnDrop.classList.add("btnDrop--upArrow");
+    stage6BtnDrop.classList.remove("btnDrop--downArrow");
+    stage6ContentsBox.classList.remove("hidden");
+  } else {
+    stage6BtnDrop.classList.remove("btnDrop--upArrow");
+    stage6BtnDrop.classList.add("btnDrop--downArrow");
+    stage6ContentsBox.classList.add("hidden");
+  }
+})
 
 /* 라이트 박스 갤러리 */
 function wrap(el) {
