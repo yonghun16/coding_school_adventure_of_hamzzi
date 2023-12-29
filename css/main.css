@@ -156,9 +156,6 @@ body img {
 .index {
   margin-bottom: 40px;
 }
-.index .stageInner{
-  background-color: #1e1104;
-}
 
 .index .titleBox1,
 .index .titleBox2,
@@ -420,7 +417,7 @@ body img {
 
 .certificate .certificate__frame {
   background-color: white;
-  padding: 20px;
+  padding: 15px;
 }
 
 .certificate .certificate__frame img {
@@ -442,17 +439,16 @@ body img {
   justify-content: center;
   background-color: white;
   height: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 10px;
 }
 
 .gallery .gallery__contents img {
   display: block;
-  margin: 1.3vw;
-  width: 10vw;
-  min-width: 100px;
-  height: 10vw;
-  min-height: 100px;
+  margin: 10px;
+  width: 11vw;
+  min-width: 120px;
+  height: 9vw;
+  min-height: 90px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 }
