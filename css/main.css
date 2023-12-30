@@ -443,6 +443,7 @@ body img {
 .thoughts .thoughts__frame {
   background-color: white;
 }
+
 .thoughts .thoughts__frame .question {
   color : #805d3b;
   font-size: 1.1rem;
@@ -452,6 +453,10 @@ body img {
   padding: 15px 0 8px 0;
   box-sizing: border-box;
 }
+.thoughts .thoughts__frame .question:first-child {
+  border-top: none;
+}
+
 .thoughts .thoughts__frame .answer {
   font-size: 1.1rem;
   color : gray;
