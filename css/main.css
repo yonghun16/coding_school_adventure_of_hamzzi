@@ -157,12 +157,7 @@ body img {
   margin-bottom: 40px;
 }
 
-.index .titleBox1,
-.index .titleBox2,
-.index .titleBox3,
-.index .titleBox4,
-.index .titleBox5,
-.index .titleBox6 {
+.index .titleBox {
   height: 60px;
   position: sticky;
   top: 0;
@@ -229,12 +224,7 @@ body img {
   transition: 0.2s;
 }
 
-.index .stageContents1,
-.index .stageContents2,
-.index .stageContents3,
-.index .stageContents4,
-.index .stageContents5,
-.index .stageContents6 {
+.index .stageContents {
   width: 100%;
   background-image: url("../img/common/back2.png");
   background-repeat: repeat;
@@ -404,7 +394,21 @@ body img {
   max-height: 1320px;
 }
 
+/* stage 5 */
+.stage5 .question5 {
+  height: calc(380px + 15vw);
+  max-height: 450px;
+}
 
+.stage5 .solution5 {
+  height: calc(450px + 25vw);
+  max-height: 500px;
+}
+
+.stage5 .source5 {
+  height: calc(330px + 80vw);
+  max-height: 700px;
+}
 
 
 
