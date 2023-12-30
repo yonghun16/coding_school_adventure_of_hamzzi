@@ -435,6 +435,23 @@ body img {
   max-height: 750px;
 }
 
+/* 소감 section */
+.thoughts {
+  margin-bottom: 30px;
+}
+
+.thoughts .thoughts__frame {
+  background-color: white;
+  padding: 15px;
+}
+
+.thoughts .thoughts__frame img {
+  width: 100%;
+  display: block;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
 /* 수료증 section */
 .certificate {
   margin-bottom: 30px;

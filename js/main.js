@@ -13,7 +13,7 @@ const btnAudio = document.querySelector(".main .audioBtn");
 const btnPlay = document.querySelector(".main .audioBtnPlay");
 const btnPause = document.querySelector(".main .audioBtnPause");
 const bgm = new Audio();
-bgm.src = "./sound/rmw0027.mp3";
+// bgm.src = "./sound/rmw0027.mp3";
 bgm.loop = true;
 
 // 자동 재생 감지
