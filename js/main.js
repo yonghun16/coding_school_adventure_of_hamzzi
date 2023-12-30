@@ -58,7 +58,7 @@ const stageBtns = document.querySelectorAll(".index .titleBox");
 const stageBtnDrops = document.querySelectorAll(".index .btnDrop");
 const stageContents = document.querySelectorAll(".index .stageContents");
 
-let isClickedStageBtns = [false, false, false, false, false, false];
+let isClickedStageBtns = [true, true, true, true, true, true];
 let preIndex = 0;
 
 for (let index = 0; index < stageBtns.length; index++) {
@@ -70,19 +70,21 @@ for (let index = 0; index < stageBtns.length; index++) {
   })
 
   stageBtns[index].addEventListener("click", function() {
-    isClickedStageBtns[index] = !isClickedStageBtns[index];
-    if(isClickedStageBtns[index]) {
+    if(isClickedStageBtns[index] === true) {
       stageBtnDrops[preIndex].classList.remove("btnDrop--upArrow");
       stageBtnDrops[preIndex].classList.add("btnDrop--downArrow");
       stageContents[preIndex].classList.add("hidden");
+      isClickedStageBtns[preIndex] = true;
       stageBtnDrops[index].classList.add("btnDrop--upArrow");
       stageBtnDrops[index].classList.remove("btnDrop--downArrow");
       stageContents[index].classList.remove("hidden");
+      isClickedStageBtns[index] = false;
       preIndex = index;
     } else {
       stageBtnDrops[index].classList.remove("btnDrop--upArrow");
       stageBtnDrops[index].classList.add("btnDrop--downArrow");
       stageContents[index].classList.add("hidden");
+      isClickedStageBtns[index] = true;
     }
   })
 
