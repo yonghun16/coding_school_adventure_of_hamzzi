@@ -410,8 +410,21 @@ body img {
   max-height: 700px;
 }
 
+/* stage 6 */
+.stage6 .question6 {
+  height: calc(380px + 15vw);
+  max-height: 450px;
+}
 
+.stage6 .solution6 {
+  height: calc(450px + 25vw);
+  max-height: 500px;
+}
 
+.stage6 .source6 {
+  height: calc(330px + 80vw);
+  max-height: 750px;
+}
 
 
 /* 수료증 section */
