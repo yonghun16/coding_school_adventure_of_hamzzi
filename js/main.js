@@ -56,9 +56,11 @@ btnAudio.addEventListener("click", function () {
 const stageBtns = document.querySelectorAll(".index .titleBox");
 const stageBtnDrops = document.querySelectorAll(".index .btnDrop");
 const stageContents = document.querySelectorAll(".index .stageContents");
+const stageContentsWrapers = document.querySelectorAll(".index .stageContentsWraper");
 
 let isClickedStageBtns = [true, true, true, true, true, true];
 let preIndex = 0;
+let stageHeight;
 
 for (let index = 0; index < stageBtns.length; index++) {
   stageBtns[index].addEventListener("mouseover", function() {
@@ -70,24 +72,38 @@ for (let index = 0; index < stageBtns.length; index++) {
 
   stageBtns[index].addEventListener("click", function() {
     if(isClickedStageBtns[index] === true) {
+      // 이전에 있던 스테이지(preIndex) 접기
       stageBtnDrops[preIndex].classList.remove("btnDrop--upArrow");
       stageBtnDrops[preIndex].classList.add("btnDrop--downArrow");
-      stageContents[preIndex].classList.add("hidden");
+      stageContents[preIndex].classList.add("hiddenStage");
+      stageContentsWrapers[preIndex].style.height = "0px";
+      stageContentsWrapers[preIndex].style.transition = "height 0.7s";
       isClickedStageBtns[preIndex] = true;
+
+      // 현재 선택된 스테이지 펴기
       stageBtnDrops[index].classList.add("btnDrop--upArrow");
       stageBtnDrops[index].classList.remove("btnDrop--downArrow");
-      stageContents[index].classList.remove("hidden");
       isClickedStageBtns[index] = false;
+      stageHeight = stageContents[index].clientHeight;
+      stageContentsWrapers[index].style.height = stageHeight+"px";
+      stageContentsWrapers[index].style.transition = "height 0.7s";
+      stageContents[index].classList.remove("hiddenStage");
+
+      // 현재 선택된 스테이지 -> 이전 선택했던 스테이지index(preIndex)로
       preIndex = index;
 
+      // 부드러운 이동 스크롤
       gsap.to(window, .7, {
         scrollTo: 660 + 60*index
       })
 
     } else {
+      // 현재 선택된 스테이지 접기
       stageBtnDrops[index].classList.remove("btnDrop--upArrow");
       stageBtnDrops[index].classList.add("btnDrop--downArrow");
-      stageContents[index].classList.add("hidden");
+      stageContents[index].classList.add("hiddenStage");
+      stageContentsWrapers[index].style.height = "0px";
+      stageContentsWrapers[index].style.transition = "height 0.7s";
       isClickedStageBtns[index] = true;
 
       gsap.to(window, .7, {
@@ -95,9 +111,16 @@ for (let index = 0; index < stageBtns.length; index++) {
       })
     }
   })
-}
 
-/* 스테이지 메뉴 버튼 - 스크롤 */
+  // 창크기를 움직여도 같은 사이즈로 자동 조절
+  window.addEventListener("resize", function() {
+    stageHeight = stageContents[index].clientHeight;
+    if (isClickedStageBtns[index] === false) {
+      stageContentsWrapers[index].style.height = stageHeight+"px";
+      stageContentsWrapers[index].style.transition = "height 0s";
+    }
+  })
+}
 
 
 
