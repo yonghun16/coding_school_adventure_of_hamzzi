@@ -52,8 +52,7 @@ btnAudio.addEventListener("click", function () {
 });
 
 
-/* 스테이지 메뉴 버튼 */
-
+/* 스테이지 메뉴 버튼 - 열고 닫기  */
 const stageBtns = document.querySelectorAll(".index .titleBox");
 const stageBtnDrops = document.querySelectorAll(".index .btnDrop");
 const stageContents = document.querySelectorAll(".index .stageContents");
@@ -80,15 +79,26 @@ for (let index = 0; index < stageBtns.length; index++) {
       stageContents[index].classList.remove("hidden");
       isClickedStageBtns[index] = false;
       preIndex = index;
+
+      gsap.to(window, .7, {
+        scrollTo: 660 + 60*index
+      })
+
     } else {
       stageBtnDrops[index].classList.remove("btnDrop--upArrow");
       stageBtnDrops[index].classList.add("btnDrop--downArrow");
       stageContents[index].classList.add("hidden");
       isClickedStageBtns[index] = true;
+
+      gsap.to(window, .7, {
+        scrollTo: 600
+      })
     }
   })
-
 }
+
+/* 스테이지 메뉴 버튼 - 스크롤 */
+
 
 
 /* 라이트 박스 갤러리 */
