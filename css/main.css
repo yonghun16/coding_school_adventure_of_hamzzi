@@ -2,12 +2,12 @@
 @import "reset.css";
 
 /* import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
 
 /* common */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   background-image: url("../img/common/back.png");
 }
@@ -29,7 +29,7 @@ body img {
   width: 100%;
   height: 60px;
   font-size: 2.3em;
-  font-family: 'Dongle', 'Roboto', sans-serif;
+  font-family: "Dongle", "Roboto", sans-serif;
   color: white;
   background-color: #6ab04c;
   display: flex;
@@ -59,8 +59,6 @@ body img {
 .main {
   margin-bottom: 40px;
 }
-
-
 
 .main .main__headerBar {
   padding-left: 0;
@@ -94,12 +92,12 @@ body img {
   top: 70px;
   right: 15px;
   color: white;
-  opacity: .5;
-  transition: opacity .2s;
+  opacity: 0.5;
+  transition: opacity 0.2s;
 }
 
 .main .audioBtn:hover {
-  opacity: .8;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -131,19 +129,20 @@ body img {
 
 .main .mainTitle,
 .main .subTitle {
-  width: 100%;
+  width: 90vw;
   position: absolute;
 }
 
 .main .mainTitle {
   display: block;
-  bottom: 25%;
-  max-width: 500px;
+  bottom: 27%;
+  min-width: 300px;
+  max-width: 450px;
 }
 
 .main .subTitle {
   top: 75%;
-  max-width: 500px;
+  max-width: 450px;
 }
 .main .fade-in {
   opacity: 0;
@@ -159,7 +158,7 @@ body img {
   height: 60px;
   position: sticky;
   top: 0;
-  background-image:  url("../img/common/stabe_bar.png");
+  background-image: url("../img/common/stabe_bar.png");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 2;
@@ -176,24 +175,24 @@ body img {
 .index .stageImg {
   width: 70px;
   height: 50px;
-  position:absolute;
+  position: absolute;
   top: 2px;
   left: 100px;
 }
 
 .index .stageTitle {
-  position:absolute;
+  position: absolute;
   left: 30px;
   top: 9px;
 }
 
 .index .stageSubTitle {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: white;
 }
 
 .index .stageMainTitle {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: white;
   font-size: 1.4rem;
 }
@@ -222,13 +221,28 @@ body img {
   transition: 0.2s;
 }
 
-.index .stageContents {
+.index .stageContentsWraper {
+  height: 0px; 
+  transition: height 0.7s ease 0s;
   width: 100%;
   background-image: url("../img/common/back2.png");
   background-repeat: repeat;
+  overflow: hidden;
+}
+
+.index .stageContentsWraper .hiddenStage {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.index .stageContents {
+  width: 100%;
   position: relative;
   box-sizing: border-box;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: height 0.7s;
+  visibility: visible;
 }
 
 .index .minimap {
@@ -246,8 +260,7 @@ body img {
 .index .stage__question,
 .index .stage__solution,
 .index .stage__source,
-.index .stage__video
-{
+.index .stage__video {
   position: relative;
 }
 
@@ -259,7 +272,7 @@ body img {
 }
 
 .index .stage__solution,
-.index .stage__source, 
+.index .stage__source,
 .index .stage__source {
   padding-top: 30px;
 }
@@ -288,16 +301,14 @@ body img {
   max-width: 170px;
 }
 
-
 .index .stage__question__textBox,
 .index .stage__solution__textBox,
 .index .stage__source__textBox,
-.index .stage__video__textBox
-{
+.index .stage__video__textBox {
   position: absolute;
   top: 10px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, .45);
+  background-color: rgba(0, 0, 0, 0.45);
   color: white;
   font-size: 1.1rem;
   line-height: 1.5;
@@ -424,7 +435,6 @@ body img {
   max-height: 750px;
 }
 
-
 /* 수료증 section */
 .certificate {
   margin-bottom: 30px;
@@ -438,10 +448,9 @@ body img {
 .certificate .certificate__frame img {
   width: 100%;
   display: block;
-  box-shadow: 4px 4px 2px rgba(0, 0, 0, .2);
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
-
 
 /* 갤러리 section */
 .gallery {
@@ -468,8 +477,6 @@ body img {
   border-radius: 5px;
 }
 
-
-
 /* Footer */
 footer {
   width: 100%;
@@ -486,3 +493,4 @@ footer .school {
   margin-top: 10px;
   font-size: 12px;
 }
+
