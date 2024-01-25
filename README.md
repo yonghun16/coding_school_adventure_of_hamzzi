@@ -24,4 +24,5 @@
 	<!-- Novim --><a href="https://neovim.io/"><img src="https://img.shields.io/badge/Neovim-01B952?style=flat&logo=neovim&logoColor=white" /></a>
 	<!-- VScode --><a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?style=flat&logo=VisualStudioCode&logoColor=white" /></a>
 	<!-- Gimp --><a href="https://www.gimp.org/"><img src="https://img.shields.io/badge/Gimp-0E2326?style=flat&logo=gimp&logoColor=white" /></a>
+	<!-- Youtube --><a href="https://www.youtube.com"><img src="https://img.shields.io/badge/Youtube-FF0000?style=flat&logo=youtube&logoColor=white" /></a>
 </div>
