@@ -1,11 +1,11 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=180&section=header&text=햄스터%20로봇%20코딩&fontSize=45&animation=fadeIn&fontAlignY=38&desc=FrontEnd16&descAlignY=55&descAlign=85)
+![header](https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=180&section=header&text=햄스터%20로봇%20코딩&fontSize=45&animation=fadeIn&fontAlignY=38&desc=yonghun16&descAlignY=55&descAlign=85)
 
 
 <img src="https://raw.githubusercontent.com/yonghun16/coding_school_adventure_of_hamzzi/main/preview.jpg" width=800px />
 	
 <ul>
 	<li>
-		<a href="https://yonghun16.github.io/coding_school_adventure_of_hamzzi/">보러가기</a>
+		<a href="https://yonghun16.github.io/coding_school_adventure_of_hamzzi/">DEMO 보러가기</a>
 	</li>
 	<li>
 		Single-page, 반응형
