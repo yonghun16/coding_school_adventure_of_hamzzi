@@ -1,14 +1,28 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=180&section=header&text=햄스터%20로봇%20코딩&fontSize=45&animation=fadeIn&fontAlignY=38&desc=yonghun16&descAlignY=55&descAlign=85)
-
-
-<a href="https://yonghun16.github.io/coding_school_adventure_of_hamzzi/"><img src="https://raw.githubusercontent.com/yonghun16/coding_school_adventure_of_hamzzi/main/preview.jpg" width=800px /></a>
+<div align="center">
 	
+![header](https://capsule-render.vercel.app/api?type=waving&color=4078c0&height=180&section=header&text=햄스터%20로봇%20코딩&fontSize=45&animation=fadeIn&fontAlignY=38&desc=yonghun16&descAlignY=55&descAlign=85)
+	
+<a href="https://yonghun16.github.io/coding_school_adventure_of_hamzzi/"><img src="https://raw.githubusercontent.com/yonghun16/coding_school_adventure_of_hamzzi/main/preview.jpg" width=800px /></a>
+</div>
 <ul>
 	<li>
 		<a href="https://yonghun16.github.io/coding_school_adventure_of_hamzzi/">수료 포트폴리오 보러가기</a>
 	</li>
 	<li>
 		<a href="https://robomation.net/?page_id=11183">햄스터 로봇 알아보기(로봇메이션)</a>
+	</li>
+	<li>
+		햄스터 로봇으로 배우는 상황 기반 로봇 제어 프로그래밍 <br />
+		이 수업은 햄스터 로봇을 활용해 다양한 던전 미션을 해결하는 프로젝트형 코딩 교육입니다. <br />
+		학습자는 로봇이 가진 장애물 감지 센서, 비프음, LED, 라인 트레이싱 기능 등을 활용하여 다음과 같은 상황 기반 문제를 해결합니다: <br />
+		<ul>
+			<li>미로 던전 통과하기: 장애물 회피 및 경로 탐색 로직 학습</li>
+			<li>청소하면 길 건너기: 순차 구조 + 조건 판단</li>
+			<li>노래로 몹 재우기: 소리 출력과 이벤트 기반 상호작용</li>
+			<li>몹 피하며 던전 탈출하기: 반복문과 조건문의 결합</li>
+		</ul>
+		본 과정은 피지컬 컴퓨팅의 기초와 로봇 제어 원리, 센서 데이터 활용, 그리고 상황별 알고리즘 설계 능력을 자연스럽게 익히는 데 초점을 맞추고 있으며,<br />
+		미션 기반 수업을 통해 문제 해결력과 창의적 사고를 함께 키울 수 있습니다.
 	</li>
 	<li>
 		Single-page, 반응형
